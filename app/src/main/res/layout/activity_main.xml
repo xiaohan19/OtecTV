@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_main"
+    tools:context="com.chinaotec.tv.otectv.MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/w_55"
+        android:layout_marginTop="@dimen/w_183"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:id="@+id/main_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/w_844"
+                android:layout_height="@dimen/w_482"
+                app:roundingBorderWidth="@dimen/w_1"
+                app:roundingBorderColor="@color/mainFrame_gray"
+                app:placeholderImage="@mipmap/main_tv"
+                />
+
+        </FrameLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>
