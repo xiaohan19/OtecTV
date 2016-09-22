@@ -5,5 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="mainFrame_gray">#BBB</color>
     <color name="mainFrameTrue_blue">#A5CDFF</color>
-    <color name="transparent">#00ffffff</color>
+    <color name="transparent">#00FFFFFF</color>
 </resources>

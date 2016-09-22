@@ -15,16 +15,24 @@
         android:scrollbars="none">
 
         <FrameLayout
-            android:id="@+id/main_rl"
+            android:id="@+id/main_fl"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <com.facebook.drawee.view.SimpleDraweeView
-                android:layout_width="@dimen/w_844"
-                android:layout_height="@dimen/w_482"
+                android:layout_width="@dimen/w_852"
+                android:layout_height="@dimen/w_490"
+                android:padding="@dimen/w_4"
+                android:background="@drawable/main_select_true"
                 app:roundingBorderWidth="@dimen/w_1"
                 app:roundingBorderColor="@color/mainFrame_gray"
                 app:placeholderImage="@mipmap/main_tv"
                 />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
 
         </FrameLayout>
     </HorizontalScrollView>
