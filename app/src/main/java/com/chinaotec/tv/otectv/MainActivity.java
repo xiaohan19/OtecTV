@@ -13,24 +13,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        init();
+//        init();
     }
 
-    private void init() {
-        RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.main_rl);
-        for (int i = 0; i < relativeLayout.getChildCount(); i++) {
-            relativeLayout.getChildAt(i).setFocusable(true);
-            relativeLayout.getChildAt(i).setOnFocusChangeListener(new View.OnFocusChangeListener() {
-                @Override
-                public void onFocusChange(View v, boolean hasFocus) {
-                    if (hasFocus) {
-                        v.setBackgroundResource(R.drawable.main_select_true);
-                    }else {
-                        v.setBackgroundResource(R.color.transparent);
-                    }
-                }
-            });
-        }
-    }
+//    private void init() {
+//        RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.main_rl);
+//        for (int i = 0; i < relativeLayout.getChildCount(); i++) {
+//            relativeLayout.getChildAt(i).setFocusable(true);
+//            relativeLayout.getChildAt(i).setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//                @Override
+//                public void onFocusChange(View v, boolean hasFocus) {
+//                    if (hasFocus) {
+//                        v.setBackgroundResource(R.drawable.main_select_true);
+//                    }else {
+//                        v.setBackgroundResource(R.color.transparent);
+//                    }
+//                }
+//            });
+//        }
+//    }
 
 }
