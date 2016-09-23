@@ -1919,5 +1919,5 @@
 <dimen name="w_1917">1278.0px</dimen>
 <dimen name="w_1918">1278.66px</dimen>
 <dimen name="w_1919">1279.33px</dimen>
-<dimen name="w_1920">1280px</dimen>
+    <dimen name="w_1920">1280.0px</dimen>
 </resources>

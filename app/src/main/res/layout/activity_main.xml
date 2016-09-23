@@ -5,9 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/bg_main"
+    android:clipChildren="false"
+    android:clipToPadding="false"
     tools:context="com.chinaotec.tv.otectv.MainActivity">
 
-    <HorizontalScrollView
+    <com.chinaotec.tv.otectv.custom.MyHorizontalScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/w_55"
@@ -18,24 +21,89 @@
             android:id="@+id/main_fl"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/tv_btn"
                 android:layout_width="@dimen/w_852"
                 android:layout_height="@dimen/w_490"
+                android:layout_marginLeft="@dimen/w_50"
+                android:layout_marginTop="@dimen/w_50"
                 android:padding="@dimen/w_4"
-                android:background="@drawable/main_select_true"
-                app:roundingBorderWidth="@dimen/w_1"
-                app:roundingBorderColor="@color/mainFrame_gray"
                 app:placeholderImage="@mipmap/main_tv"
-                />
+                app:roundedCornerRadius="@dimen/w_1"
+                app:roundingBorderColor="@color/mainFrame_gray"
+                app:roundingBorderWidth="@dimen/w_1" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_910"
+                android:layout_marginTop="@dimen/w_50"
+                android:orientation="vertical"
+                android:padding="@dimen/w_4">
 
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="@dimen/w_415"
+                    android:layout_height="@dimen/w_355"
+                    app:placeholderImage="@mipmap/main_hd_preview"
+                    app:roundedCornerRadius="@dimen/w_1"
+                    app:roundingBorderColor="@color/mainFrame_gray"
+                    app:roundingBorderWidth="@dimen/w_1" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="@dimen/w_415"
+                    android:layout_height="@dimen/w_127"
+                    app:placeholderImage="@mipmap/main_hd"
+                    app:roundedCornerRadius="@dimen/w_1"
+                    app:roundingBorderColor="@color/mainFrame_gray"
+                    app:roundingBorderWidth="@dimen/w_1" />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_1341"
+                android:layout_marginTop="@dimen/w_50"
+                android:orientation="vertical"
+                android:padding="@dimen/w_4">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="@dimen/w_415"
+                    android:layout_height="@dimen/w_355"
+                    app:placeholderImage="@mipmap/main_look_back_preview"
+                    app:roundedCornerRadius="@dimen/w_1"
+                    app:roundingBorderColor="@color/mainFrame_gray"
+                    app:roundingBorderWidth="@dimen/w_1" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="@dimen/w_415"
+                    android:layout_height="@dimen/w_127"
+                    app:placeholderImage="@mipmap/main_look_back"
+                    app:roundedCornerRadius="@dimen/w_1"
+                    app:roundingBorderColor="@color/mainFrame_gray"
+                    app:roundingBorderWidth="@dimen/w_1" />
+            </LinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/w_423"
+                android:layout_height="@dimen/w_490"
+                android:layout_marginLeft="@dimen/w_1772"
+                android:layout_marginRight="@dimen/w_50"
+                android:layout_marginTop="@dimen/w_50"
+                android:padding="@dimen/w_4"
+                app:placeholderImage="@mipmap/main_big_ad"
+                app:roundedCornerRadius="@dimen/w_1"
+                app:roundingBorderColor="@color/mainFrame_gray"
+                app:roundingBorderWidth="@dimen/w_1" />
 
         </FrameLayout>
-    </HorizontalScrollView>
+    </com.chinaotec.tv.otectv.custom.MyHorizontalScrollView>
+
+    <com.chinaotec.tv.otectv.custom.ShadowView
+        android:id="@+id/shadow"
+        android:layout_width="@dimen/w_100"
+        android:layout_height="@dimen/w_100"
+        app:upImageRes="@drawable/item_shadow" />
 
 
 </RelativeLayout>
