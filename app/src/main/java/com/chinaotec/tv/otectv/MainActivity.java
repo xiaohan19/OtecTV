@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
-        MyHorizontalScrollView scrollView = (MyHorizontalScrollView) findViewById(R.id.scrollView);
+        MyHorizontalScrollView scrollView = (MyHorizontalScrollView) findViewById(R.id.main_scroll_view);
         scrollView.setFadingEdge((int) getResources().getDimension(R.dimen.w_100));
         FrameLayout relativeLayout = (FrameLayout) findViewById(R.id.main_fl);
         final ShadowView shadowView = (ShadowView) findViewById(R.id.shadow);
