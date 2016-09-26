@@ -9,6 +9,7 @@ import com.chinaotec.tv.otectv.R;
 
 /**
  * Created by linhao on 2016/9/23.
+ * 此滚动条修正无法滚动到因放大view被遮挡的问题
  */
 public class MyHorizontalScrollView extends HorizontalScrollView {
     private int mFadingEdge;
