@@ -218,6 +218,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/w_49"
         android:layout_marginLeft="@dimen/w_65"
+        android:focusable="true"
         android:src="@mipmap/main_home" />
 
     <ImageView
@@ -228,6 +229,7 @@
         android:layout_marginBottom="@dimen/w_49"
         android:layout_marginLeft="@dimen/w_61"
         android:layout_toRightOf="@id/main_home_img"
+        android:focusable="true"
         android:src="@mipmap/main_trailer" />
 
     <ImageView
@@ -237,6 +239,7 @@
         android:layout_marginBottom="@dimen/w_49"
         android:layout_marginLeft="@dimen/w_61"
         android:layout_toRightOf="@id/main_trailer"
+        android:focusable="true"
         android:src="@mipmap/main_ott" />
 
 </RelativeLayout>
