@@ -1920,4 +1920,8 @@
 <dimen name="w_1918">1918.0px</dimen>
 <dimen name="w_1919">1919.0px</dimen>
     <dimen name="w_1920">1920.0px</dimen>
+    <dimen name="w_1921">1921.0px</dimen>
+    <dimen name="w_2198">2198.0px</dimen>
+    <dimen name="w_2206">2206.0px</dimen>
+    <dimen name="w_2627">2627.0px</dimen>
 </resources>

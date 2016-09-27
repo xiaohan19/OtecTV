@@ -40,9 +40,9 @@ public class WeatherView extends LinearLayout {
             public void run() {
                 SimpleDateFormat sDateFormat;
                 if (isColon)
-                    sDateFormat = new SimpleDateFormat("hh:mm  yyyy-MM-dd");
+                    sDateFormat = new SimpleDateFormat("HH:mm  yyyy-MM-dd");
                 else
-                    sDateFormat = new SimpleDateFormat("hh mm  yyyy-MM-dd");
+                    sDateFormat = new SimpleDateFormat("HH mm  yyyy-MM-dd");
                 String date = sDateFormat.format(new java.util.Date());
                 timeTxt.setText(date);
                 isColon = !isColon;

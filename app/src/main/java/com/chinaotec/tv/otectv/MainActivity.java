@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
         MyHorizontalScrollView scrollView = (MyHorizontalScrollView) findViewById(R.id.main_scroll_view);
-        scrollView.setFadingEdge((int) getResources().getDimension(R.dimen.w_100));
+        scrollView.setFadingEdge((int) getResources().getDimension(R.dimen.w_64));
         FrameLayout relativeLayout = (FrameLayout) findViewById(R.id.main_fl);
         final ShadowView shadowView = (ShadowView) findViewById(R.id.shadow);
         shadowView.setDrawable(getResources().getDrawable(R.drawable.main_select_true));
@@ -34,7 +34,20 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, v.getId() + "", Toast.LENGTH_SHORT).show();
                 }
             });
+//            relativeLayout.getChildAt(i).setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//                @Override
+//                public void onFocusChange(View v, boolean hasFocus) {
+//                    if (hasFocus) {
+//                        v.bringToFront();
+//                        shadowView.setFocusView(v,1.1f);
+//                    }else {
+//                        shadowView.setUnFocusView(v);
+//                    }
+//                }
+//            });
         }
+//
+//
         relativeLayout.getViewTreeObserver().addOnGlobalFocusChangeListener(new ViewTreeObserver.OnGlobalFocusChangeListener() {
             @Override
             public void onGlobalFocusChanged(View oldFocus, View newFocus) {

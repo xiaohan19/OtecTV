@@ -13,22 +13,22 @@
         android:id="@+id/main_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/w_55"
-        android:layout_marginTop="@dimen/w_183"
+        android:layout_marginTop="@dimen/w_139"
         android:scrollbars="none">
-
+        <!--第一列-->
         <FrameLayout
             android:id="@+id/main_fl"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/w_11"
+            android:paddingRight="@dimen/w_11">
 
             <com.facebook.drawee.view.SimpleDraweeView
                 android:id="@+id/tv_btn"
-                android:layout_width="@dimen/w_852"
-                android:layout_height="@dimen/w_490"
-                android:layout_marginLeft="@dimen/w_50"
-                android:layout_marginTop="@dimen/w_50"
-                android:padding="@dimen/w_4"
+                android:layout_width="@dimen/w_844"
+                android:layout_height="@dimen/w_482"
+                android:layout_marginLeft="@dimen/w_53"
+                android:layout_marginTop="@dimen/w_53"
                 app:placeholderImage="@mipmap/main_tv"
                 app:roundedCornerRadius="@dimen/w_1"
                 app:roundingBorderColor="@color/mainFrame_gray"
@@ -37,10 +37,9 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/w_910"
-                android:layout_marginTop="@dimen/w_50"
-                android:orientation="vertical"
-                android:padding="@dimen/w_4">
+                android:layout_marginLeft="@dimen/w_911"
+                android:layout_marginTop="@dimen/w_53"
+                android:orientation="vertical">
 
                 <com.facebook.drawee.view.SimpleDraweeView
                     android:layout_width="@dimen/w_415"
@@ -62,10 +61,9 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/w_1341"
-                android:layout_marginTop="@dimen/w_50"
-                android:orientation="vertical"
-                android:padding="@dimen/w_4">
+                android:layout_marginLeft="@dimen/w_1340"
+                android:layout_marginTop="@dimen/w_53"
+                android:orientation="vertical">
 
                 <com.facebook.drawee.view.SimpleDraweeView
                     android:layout_width="@dimen/w_415"
@@ -85,16 +83,117 @@
             </LinearLayout>
 
             <com.facebook.drawee.view.SimpleDraweeView
-                android:layout_width="@dimen/w_423"
-                android:layout_height="@dimen/w_490"
-                android:layout_marginLeft="@dimen/w_1772"
-                android:layout_marginRight="@dimen/w_50"
-                android:layout_marginTop="@dimen/w_50"
-                android:padding="@dimen/w_4"
+                android:layout_width="@dimen/w_415"
+                android:layout_height="@dimen/w_482"
+                android:layout_marginLeft="@dimen/w_1769"
+                android:layout_marginTop="@dimen/w_53"
                 app:placeholderImage="@mipmap/main_big_ad"
                 app:roundedCornerRadius="@dimen/w_1"
                 app:roundingBorderColor="@color/mainFrame_gray"
                 app:roundingBorderWidth="@dimen/w_1" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/w_415"
+                android:layout_height="@dimen/w_234"
+                android:layout_marginLeft="@dimen/w_2198"
+                android:layout_marginTop="@dimen/w_53"
+                app:placeholderImage="@mipmap/main_ad1"
+                app:roundedCornerRadius="@dimen/w_1"
+                app:roundingBorderColor="@color/mainFrame_gray"
+                app:roundingBorderWidth="@dimen/w_1" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/w_415"
+                android:layout_height="@dimen/w_234"
+                android:layout_marginLeft="@dimen/w_2198"
+                android:layout_marginTop="@dimen/w_301"
+                app:placeholderImage="@mipmap/main_ad2"
+                app:roundedCornerRadius="@dimen/w_1"
+                app:roundingBorderColor="@color/mainFrame_gray"
+                app:roundingBorderWidth="@dimen/w_1" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/w_415"
+                android:layout_height="@dimen/w_234"
+                android:layout_marginLeft="@dimen/w_2627"
+                android:layout_marginRight="@dimen/w_53"
+                android:layout_marginTop="@dimen/w_53"
+                app:placeholderImage="@mipmap/main_community"
+                app:roundedCornerRadius="@dimen/w_1"
+                app:roundingBorderColor="@color/mainFrame_gray"
+                app:roundingBorderWidth="@dimen/w_1" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/w_415"
+                android:layout_height="@dimen/w_234"
+                android:layout_marginLeft="@dimen/w_2627"
+                android:layout_marginRight="@dimen/w_53"
+                android:layout_marginTop="@dimen/w_301"
+                app:placeholderImage="@mipmap/main_manage"
+                app:roundedCornerRadius="@dimen/w_1"
+                app:roundingBorderColor="@color/mainFrame_gray"
+                app:roundingBorderWidth="@dimen/w_1" />
+            <!--第二列-->
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/w_415"
+                android:layout_height="@dimen/w_234"
+                android:layout_marginLeft="@dimen/w_53"
+                android:layout_marginTop="@dimen/w_549"
+                app:placeholderImage="@mipmap/main_app_store"
+                app:roundedCornerRadius="@dimen/w_1"
+                app:roundingBorderColor="@color/mainFrame_gray"
+                app:roundingBorderWidth="@dimen/w_1" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/w_415"
+                android:layout_height="@dimen/w_234"
+                android:layout_marginLeft="@dimen/w_482"
+                android:layout_marginTop="@dimen/w_549"
+                app:placeholderImage="@mipmap/main_videos"
+                app:roundedCornerRadius="@dimen/w_1"
+                app:roundingBorderColor="@color/mainFrame_gray"
+                app:roundingBorderWidth="@dimen/w_1" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/w_415"
+                android:layout_height="@dimen/w_234"
+                android:layout_marginLeft="@dimen/w_911"
+                android:layout_marginTop="@dimen/w_549"
+                app:placeholderImage="@mipmap/main_shopping"
+                app:roundedCornerRadius="@dimen/w_1"
+                app:roundingBorderColor="@color/mainFrame_gray"
+                app:roundingBorderWidth="@dimen/w_1" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/w_415"
+                android:layout_height="@dimen/w_234"
+                android:layout_marginLeft="@dimen/w_1340"
+                android:layout_marginTop="@dimen/w_549"
+                app:placeholderImage="@mipmap/main_education"
+                app:roundedCornerRadius="@dimen/w_1"
+                app:roundingBorderColor="@color/mainFrame_gray"
+                app:roundingBorderWidth="@dimen/w_1" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/w_415"
+                android:layout_height="@dimen/w_234"
+                android:layout_marginLeft="@dimen/w_1769"
+                android:layout_marginTop="@dimen/w_549"
+                app:placeholderImage="@mipmap/main_ad3"
+                app:roundedCornerRadius="@dimen/w_1"
+                app:roundingBorderColor="@color/mainFrame_gray"
+                app:roundingBorderWidth="@dimen/w_1" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/w_415"
+                android:layout_height="@dimen/w_234"
+                android:layout_marginLeft="@dimen/w_2198"
+                android:layout_marginTop="@dimen/w_549"
+                app:placeholderImage="@mipmap/main_my_app"
+                app:roundedCornerRadius="@dimen/w_1"
+                app:roundingBorderColor="@color/mainFrame_gray"
+                app:roundingBorderWidth="@dimen/w_1" />
+
 
         </FrameLayout>
     </com.chinaotec.tv.otectv.custom.MyHorizontalScrollView>
@@ -109,6 +208,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="@dimen/w_150" />
+        android:layout_marginRight="@dimen/w_150"
+        android:layout_marginTop="@dimen/w_43" />
+
+    <ImageView
+        android:id="@+id/main_home_img"
+        android:layout_width="@dimen/w_218"
+        android:layout_height="@dimen/w_70"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/w_49"
+        android:layout_marginLeft="@dimen/w_65"
+        android:src="@mipmap/main_home" />
+
+    <ImageView
+        android:id="@+id/main_trailer"
+        android:layout_width="@dimen/w_218"
+        android:layout_height="@dimen/w_70"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/w_49"
+        android:layout_marginLeft="@dimen/w_61"
+        android:layout_toRightOf="@id/main_home_img"
+        android:src="@mipmap/main_trailer" />
+
+    <ImageView
+        android:layout_width="@dimen/w_218"
+        android:layout_height="@dimen/w_70"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/w_49"
+        android:layout_marginLeft="@dimen/w_61"
+        android:layout_toRightOf="@id/main_trailer"
+        android:src="@mipmap/main_ott" />
 
 </RelativeLayout>

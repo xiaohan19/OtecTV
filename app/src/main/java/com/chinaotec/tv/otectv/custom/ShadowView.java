@@ -172,9 +172,11 @@ public class ShadowView extends FrameLayout {
     }
 
     public void setFocusView(View newFocusView, View oldFocusView, float scaleX, float scaleY) {
-        mFocusView = newFocusView;
-        newFocusView.animate().scaleX(scaleX).scaleY(scaleY).setDuration(DEFAULT_TRAN_DUR_ANIM).start();
-        runTranslateAnimation(newFocusView, scaleX, scaleY);
+        if (newFocusView != null) {
+            mFocusView = newFocusView;
+            newFocusView.animate().scaleX(scaleX).scaleY(scaleY).setDuration(DEFAULT_TRAN_DUR_ANIM).start();
+            runTranslateAnimation(newFocusView, scaleX, scaleY);
+        }
         setUnFocusView(oldFocusView);
     }
 
