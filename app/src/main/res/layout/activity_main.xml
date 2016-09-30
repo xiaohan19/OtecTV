@@ -24,7 +24,7 @@
             android:paddingRight="@dimen/w_11">
 
             <com.facebook.drawee.view.SimpleDraweeView
-                android:id="@+id/tv_btn"
+                android:id="@+id/main_tv"
                 android:layout_width="@dimen/w_844"
                 android:layout_height="@dimen/w_482"
                 android:layout_marginLeft="@dimen/w_53"

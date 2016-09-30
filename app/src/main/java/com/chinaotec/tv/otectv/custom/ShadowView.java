@@ -52,7 +52,7 @@ public class ShadowView extends FrameLayout {
 
     private void init(Context context, AttributeSet attrs) {
         setWillNotDraw(false);
-        this.setVisibility(View.INVISIBLE);
+//        this.setVisibility(View.INVISIBLE);
         invalidate();
         // 初始化.
         if (attrs != null) {
