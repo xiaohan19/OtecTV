@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">OtecTV</string>
+
+    <!--高清页面子页面标题-->
+    <string name="page_item01_title">高清频道</string>
+    <string name="page_item02_title">高清回看</string>
+    <string name="page_item03_title">高清点播</string>
+    <string name="page_item04_title">3D点播</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--标题按钮id-->
 </resources>

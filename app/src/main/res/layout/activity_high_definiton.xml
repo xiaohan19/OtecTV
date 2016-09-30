@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_select_true"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_250"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/w_73">
+
+            <RadioButton
+                android:id="@+id/btn_hd_channel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="@string/page_item01_title"
+                android:textColor="@color/radiobutton_color"
+                android:textSize="@dimen/title_text_size_normal" />
+
+            <RadioButton
+                android:id="@+id/btn_hd_back_look"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_75"
+                android:button="@null"
+                android:text="@string/page_item02_title"
+                android:textColor="@color/radiobutton_color"
+                android:textSize="@dimen/title_text_size_normal" />
+
+            <RadioButton
+                android:id="@+id/btn_hd_on_demand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_75"
+                android:button="@null"
+                android:text="@string/page_item03_title"
+                android:textColor="@color/radiobutton_color"
+                android:textSize="@dimen/title_text_size_normal" />
+
+            <RadioButton
+                android:id="@+id/btn_hd_3D_on_demand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_75"
+                android:button="@null"
+                android:text="@string/page_item04_title"
+                android:textColor="@color/radiobutton_color"
+                android:textSize="@dimen/title_text_size_normal" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w_1"
+        android:layout_below="@id/relativeLayout_btn"
+        android:background="@android:color/holo_blue_bright" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line" />
+
+    <com.chinaotec.tv.otectv.custom.ShadowView
+        android:id="@+id/ShadowView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:upImageRes="@drawable/item_shadow" />
+
+</RelativeLayout>

@@ -1,12 +1,13 @@
 package com.chinaotec.tv.otectv;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
+import com.chinaotec.tv.otectv.activity.HighDefinitionActivity;
 import com.chinaotec.tv.otectv.custom.MyHorizontalScrollView;
 import com.chinaotec.tv.otectv.custom.ShadowView;
 
@@ -31,7 +32,12 @@ public class MainActivity extends AppCompatActivity {
             relativeLayout.getChildAt(i).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(MainActivity.this, v.getId() + "", Toast.LENGTH_SHORT).show();
+                    switch (v.getId()) {
+                        case R.id.main_hd:
+                            Intent intent = new Intent();
+                            startActivity(intent.setClass(MainActivity.this, HighDefinitionActivity.class));
+                            break;
+                    }
                 }
             });
         }
