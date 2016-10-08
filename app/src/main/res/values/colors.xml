@@ -8,5 +8,5 @@
     <color name="transparent">#00FFFFFF</color>
     <!--高清页面标题栏字体颜色选中没选中-->
     <color name="titleNormal">#ABB1B7</color>
-    <color name="titleSelected">#2B2B2B</color>
+    <color name="titleSelected">#C2C2C4</color>
 </resources>

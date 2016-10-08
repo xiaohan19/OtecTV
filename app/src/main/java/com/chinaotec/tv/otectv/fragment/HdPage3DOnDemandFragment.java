@@ -59,7 +59,7 @@ public class HdPage3DOnDemandFragment extends Fragment {
     }
 
     private void iniListener(View view) {
-        frameLayout = (FrameLayout) view.findViewById(R.id.hd_relative_out);
+        frameLayout = (FrameLayout) view.findViewById(R.id.hd_frame_out);
         for (int i = 0; i < frameLayout.getChildCount(); i++) {
             View focusView = frameLayout.getChildAt(i);
             focusView.setFocusable(true);
@@ -71,8 +71,6 @@ public class HdPage3DOnDemandFragment extends Fragment {
                 focusView.setNextFocusUpId(R.id.btn_hd_3D_on_demand);
             } else if (focusView.getId() == R.id.image_hd_item03_up) {
                 focusView.setNextFocusUpId(R.id.btn_hd_3D_on_demand);
-            } else if (focusView.getId() == R.id.image_hd_item03_down) {
-                focusView.setNextFocusDownId(R.id.image_hd_page04);
             }
         }
     }

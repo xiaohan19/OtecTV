@@ -9,6 +9,7 @@ import android.widget.FrameLayout;
 
 import com.chinaotec.tv.otectv.R;
 import com.chinaotec.tv.otectv.activity.HighDefinitionActivity;
+import com.chinaotec.tv.otectv.custom.MyHorizontalScrollView;
 import com.chinaotec.tv.otectv.custom.ShadowView;
 
 /**
@@ -58,10 +59,13 @@ public class HdPageChannelFragment extends Fragment {
                 }
             });
         }
+        //处理页面焦点乱跳
+        MyHorizontalScrollView horizontalScrollView = (MyHorizontalScrollView) view.findViewById(R.id.hd_scroll_view);
+//        horizontalScrollView.
     }
 
     private void iniListener(View view) {
-        frameLayout = (FrameLayout) view.findViewById(R.id.hd_relative_out);
+        frameLayout = (FrameLayout) view.findViewById(R.id.hd_frame_out);
         for (int i = 0; i < frameLayout.getChildCount(); i++) {
             View focusView = frameLayout.getChildAt(i);
             focusView.setFocusable(true);
@@ -73,8 +77,6 @@ public class HdPageChannelFragment extends Fragment {
                 focusView.setNextFocusUpId(R.id.btn_hd_channel);
             } else if (focusView.getId() == R.id.image_hd_item03_up) {
                 focusView.setNextFocusUpId(R.id.btn_hd_channel);
-            } else if (focusView.getId() == R.id.image_hd_item03_down) {
-                focusView.setNextFocusDownId(R.id.image_hd_page04);
             }
         }
     }

@@ -10,7 +10,6 @@
     <RelativeLayout
         android:id="@+id/relativeLayout_btn"
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content">
 
         <RadioGroup
@@ -28,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:button="@null"
                 android:text="@string/page_item01_title"
-                android:textColor="@color/radiobutton_color"
+                android:textColor="@color/radiobutton_check__color"
                 android:textSize="@dimen/title_text_size_normal" />
 
             <RadioButton
@@ -38,7 +37,7 @@
                 android:layout_marginLeft="@dimen/w_75"
                 android:button="@null"
                 android:text="@string/page_item02_title"
-                android:textColor="@color/radiobutton_color"
+                android:textColor="@color/radiobutton_check__color"
                 android:textSize="@dimen/title_text_size_normal" />
 
             <RadioButton
@@ -48,7 +47,7 @@
                 android:layout_marginLeft="@dimen/w_75"
                 android:button="@null"
                 android:text="@string/page_item03_title"
-                android:textColor="@color/radiobutton_color"
+                android:textColor="@color/radiobutton_check__color"
                 android:textSize="@dimen/title_text_size_normal" />
 
             <RadioButton
@@ -58,7 +57,7 @@
                 android:layout_marginLeft="@dimen/w_75"
                 android:button="@null"
                 android:text="@string/page_item04_title"
-                android:textColor="@color/radiobutton_color"
+                android:textColor="@color/radiobutton_check__color"
                 android:textSize="@dimen/title_text_size_normal" />
         </RadioGroup>
 

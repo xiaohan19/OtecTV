@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--高清子页面边缘组件的id-->
+    <item name="image_hd_page01" type="id" />
+    <item name="image_hd_item03_up" type="id" />
+    <item name="image_hd_item03_down" type="id" />
+    <item name="image_hd_page04" type="id" />
+    <item name="image_hd_item08" type="id" />
+</resources>

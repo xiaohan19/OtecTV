@@ -27,5 +27,4 @@ public class MyPagerStateAdapter extends FragmentStatePagerAdapter {
         return fragmentList.size();
     }
 
-
 }

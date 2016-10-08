@@ -14,16 +14,17 @@
         android:scrollbars="none">
 
         <FrameLayout
-            android:id="@+id/hd_relative_out"
+            android:id="@+id/hd_frame_out"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <!--第一排-->
             <RelativeLayout
-                android:id="@+id/image_hd_page01"
+                android:id="@id/image_hd_page01"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/w_482"
                 android:layout_marginLeft="@dimen/w_62"
-                android:layout_marginTop="@dimen/w_42">
+                android:layout_marginTop="@dimen/w_42"
+                android:nextFocusLeft="@id/image_hd_page01">
 
                 <com.facebook.drawee.view.SimpleDraweeView
                     android:layout_width="@dimen/w_844"
@@ -75,11 +76,12 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/image_hd_item03_up"
+                android:id="@id/image_hd_item03_up"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/w_234"
                 android:layout_marginLeft="@dimen/w_1774"
-                android:layout_marginTop="@dimen/w_42">
+                android:layout_marginTop="@dimen/w_42"
+                android:nextFocusRight="@id/image_hd_item03_up">
 
                 <com.facebook.drawee.view.SimpleDraweeView
                     android:layout_width="@dimen/w_415"
@@ -103,11 +105,12 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/image_hd_item03_down"
+                android:id="@id/image_hd_item03_down"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/w_234"
                 android:layout_marginLeft="@dimen/w_1774"
-                android:layout_marginTop="@dimen/w_288">
+                android:layout_marginTop="@dimen/w_288"
+                android:nextFocusRight="@id/image_hd_item03_down">
 
                 <com.facebook.drawee.view.SimpleDraweeView
                     android:layout_width="@dimen/w_415"
@@ -131,11 +134,12 @@
             </RelativeLayout>
             <!--第二排-->
             <RelativeLayout
-                android:id="@+id/image_hd_page04"
+                android:id="@id/image_hd_page04"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/w_234"
                 android:layout_marginLeft="@dimen/w_62"
-                android:layout_marginTop="@dimen/w_536">
+                android:layout_marginTop="@dimen/w_536"
+                android:nextFocusLeft="@id/image_hd_page04">
 
                 <com.facebook.drawee.view.SimpleDraweeView
                     android:layout_width="@dimen/w_415"
@@ -243,11 +247,12 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/image_hd_item08"
+                android:id="@id/image_hd_item08"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/w_234"
                 android:layout_marginLeft="@dimen/w_1774"
-                android:layout_marginTop="@dimen/w_536">
+                android:layout_marginTop="@dimen/w_536"
+                android:nextFocusRight="@id/image_hd_item08">
 
                 <com.facebook.drawee.view.SimpleDraweeView
                     android:layout_width="@dimen/w_415"

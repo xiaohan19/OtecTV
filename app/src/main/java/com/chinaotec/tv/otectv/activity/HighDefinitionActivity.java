@@ -1,7 +1,6 @@
 package com.chinaotec.tv.otectv.activity;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
@@ -26,20 +25,14 @@ public class HighDefinitionActivity extends FragmentActivity {
 
     private RelativeLayout relativeLayout_btn;
     private ViewPager viewpager;
-
     private List<Fragment> fragmentList = new ArrayList<>();
     private List<RadioButton> viewList = new ArrayList<>();
-
     private ShadowView shadowView;
     private RadioGroup radioGroup;
-
-
-    public ShadowView getShadowView() {
-        return shadowView;
-    }
+    private MyPagerStateAdapter myPagerAdapter;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_high_definiton);
         //初始化布局
@@ -49,17 +42,17 @@ public class HighDefinitionActivity extends FragmentActivity {
         //初始化逻辑
         iniListener();
         //设置适配器
-        MyPagerStateAdapter myPagerAdapter = new MyPagerStateAdapter(getSupportFragmentManager(), fragmentList);
+        myPagerAdapter = new MyPagerStateAdapter(getSupportFragmentManager(), fragmentList);
         viewpager.setAdapter(myPagerAdapter);
-        //页面第一个按钮被选中
+        //页面第一个标题按钮默认被选中
         viewList.get(0).setChecked(true);
     }
 
     private void initView() {
-
         relativeLayout_btn = (RelativeLayout) findViewById(R.id.relativeLayout_btn);
         viewpager = (ViewPager) findViewById(R.id.viewpager);
-
+        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        shadowView = (ShadowView) findViewById(R.id.ShadowView);
     }
 
     private void iniData() {
@@ -76,10 +69,6 @@ public class HighDefinitionActivity extends FragmentActivity {
     }
 
     private void iniListener() {
-        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
-
-        shadowView = (ShadowView) findViewById(R.id.ShadowView);
-
         for (int i = 0; i < radioGroup.getChildCount(); i++) {
             View childAt = radioGroup.getChildAt(i);
             final int finalI = i;
@@ -104,7 +93,7 @@ public class HighDefinitionActivity extends FragmentActivity {
                 int buttonIdChecked = group.getCheckedRadioButtonId();
                 for (int i = 0; i < viewList.size(); i++) {
                     RadioButton radioButton = viewList.get(i);
-                    //处理3D点播页面遥控器向下跳转,不能跳到该页面第一个组件的问题
+                    //处理3D点播页面使用遥控器向下跳不到该页面第一个组件的问题
                     if (buttonIdChecked == R.id.btn_hd_3D_on_demand) {
                         radioButton.setNextFocusDownId(R.id.image_hd_page01);
                     }
@@ -116,8 +105,10 @@ public class HighDefinitionActivity extends FragmentActivity {
                 }
             }
         });
-        //处理阴影
-        shadowView.setDrawable(getResources().getDrawable(R.drawable.main_select_true));
-        shadowView.setShadow(getResources().getDrawable(R.drawable.item_shadow));
+    }
+
+    //对外提供ShadowView组件对象
+    public ShadowView getShadowView() {
+        return shadowView;
     }
 }
