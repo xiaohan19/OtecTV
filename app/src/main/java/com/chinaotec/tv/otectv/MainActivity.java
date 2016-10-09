@@ -17,9 +17,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-//    static {
-//        System.loadLibrary("tvplay");
-//    }
+    static {
+        System.loadLibrary("tvplay");
+    }
 
     private List<Fragment> fragments;
 
@@ -75,31 +75,32 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-//    private void initTVPlay() {
-//
-//    }
-//
-//    @Override
-//    protected void onStop() {
-//        MediaExit();
-//        super.onStop();
-//    }
-//
-//    @Override
-//    protected void onResume() {
-//        initTVPlay();
-//        super.onResume();
-//    }
-//
-//    public native String PlayFreqHigh();
-//
-//    public native String PlayFreqMed();
-//
-//    public native String PlayFreqLow();
-//
-//    public native String MediaExit();
-//
-//    public native String SetWin(int x, int y, int w, int h);
+    public static native String PlayFreqHigh();
+
+    public static native String PlayFreqMed();
+
+    public static native String PlayFreqLow();
+
+    public static native String MediaExit();
+
+    class MyPagerAdapter extends FragmentPagerAdapter {
+
+        public MyPagerAdapter() {
+            super(getSupportFragmentManager());
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return fragments.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return fragments.size();
+        }
+    }
+
+    public static native String SetWin(int x, int y, int w, int h);
 
 
 }
