@@ -107,6 +107,13 @@ public class HighDefinitionActivity extends FragmentActivity {
         });
     }
 
+    @Override
+    protected void onDestroy() {
+        //退出当前页面时,移除当前的fragment,避免报空指针异常出错
+        viewpager.removeAllViews();
+        super.onDestroy();
+    }
+
     //对外提供ShadowView组件对象
     public ShadowView getShadowView() {
         return shadowView;
