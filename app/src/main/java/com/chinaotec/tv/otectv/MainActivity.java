@@ -23,6 +23,16 @@ public class MainActivity extends AppCompatActivity {
 
     private List<Fragment> fragments;
 
+    public static native String PlayFreqHigh();
+
+    public static native String PlayFreqMed();
+
+    public static native String PlayFreqLow();
+
+    public static native String MediaExit();
+
+    public static native String SetWin(int x, int y, int w, int h);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,33 +84,6 @@ public class MainActivity extends AppCompatActivity {
             return fragments.size();
         }
     }
-
-    public static native String PlayFreqHigh();
-
-    public static native String PlayFreqMed();
-
-    public static native String PlayFreqLow();
-
-    public static native String MediaExit();
-
-    class MyPagerAdapter extends FragmentPagerAdapter {
-
-        public MyPagerAdapter() {
-            super(getSupportFragmentManager());
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return fragments.get(position);
-        }
-
-        @Override
-        public int getCount() {
-            return fragments.size();
-        }
-    }
-
-    public static native String SetWin(int x, int y, int w, int h);
 
 
 }
