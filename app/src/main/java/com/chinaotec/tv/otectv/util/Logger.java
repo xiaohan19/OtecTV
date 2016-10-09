@@ -7,15 +7,18 @@ import android.text.TextUtils;
  */
 public final class Logger {
 
-    private static final String TAG = "OtecTV";
+    private static final String TAG = "OtecTV_";
 
     /**
-     * Set true or false if you want read logs or not
+     * 设置日志开关；
      */
     private static boolean logEnabled_d = true;
     private static boolean logEnabled_i = true;
     private static boolean logEnabled_e = true;
 
+    /**
+     * 此方法为debug用于打印调试测试信息；
+     */
     public static void d() {
         if (logEnabled_d) {
             android.util.Log.d(TAG, getLocation());
@@ -28,6 +31,11 @@ public final class Logger {
         }
     }
 
+    /**
+     * 此方法为info用于打印log中需要展示的信息，便于记录、查看；
+     *
+     * @param msg
+     */
     public static void i(String msg) {
         if (logEnabled_i) {
             android.util.Log.i(TAG, getLocation() + msg);
@@ -40,6 +48,10 @@ public final class Logger {
         }
     }
 
+    /**
+     * 此方法为error用于打印log的错误信息；
+     * @param msg
+     */
     public static void e(String msg) {
         if (logEnabled_e) {
             android.util.Log.e(TAG, getLocation() + msg);

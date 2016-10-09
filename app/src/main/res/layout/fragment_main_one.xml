@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.chinaotec.tv.otectv.fragment.main.MainOneFragment">
+
+    <FrameLayout
+        android:id="@+id/main_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/w_13"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <View
+            android:layout_width="@dimen/w_828"
+            android:layout_height="@dimen/w_484"
+            android:background="@color/black" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_hd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/main_tv"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/main_hd_preview"
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_363"
+            app:placeholderImage="@mipmap/main_hd_preview"
+            app:roundBottomLeft="false"
+            app:roundBottomRight="false"
+            app:roundTopLeft="true"
+            app:roundTopRight="true"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/main_hd_name"
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_121"
+            android:layout_below="@id/main_hd_preview"
+            app:placeholderImage="@mipmap/main_hd"
+            app:roundBottomLeft="true"
+            app:roundBottomRight="true"
+            app:roundTopLeft="false"
+            app:roundTopRight="false"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_484"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_look_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/main_hd"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/main_look_back_preview"
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_363"
+            app:placeholderImage="@mipmap/main_look_back_preview"
+            app:roundBottomLeft="false"
+            app:roundBottomRight="false"
+            app:roundTopLeft="true"
+            app:roundTopRight="true"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/main_look_back_name"
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_121"
+            android:layout_below="@id/main_look_back_preview"
+            app:placeholderImage="@mipmap/main_look_back"
+            app:roundBottomLeft="true"
+            app:roundBottomRight="true"
+            app:roundTopLeft="false"
+            app:roundTopRight="false"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_484"
+            android:background="@drawable/main_frame" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/main_app_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_tv"
+        android:layout_margin="@dimen/w_13"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/main_app_store"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_tv"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/main_app_store"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/main_play"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_shopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_tv"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/main_play"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/main_shopping"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_tv"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/main_shopping"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/main_education"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+</RelativeLayout>
