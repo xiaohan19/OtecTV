@@ -8,6 +8,12 @@
     <color name="mainFrameTrue_blue">#A5CDFF</color>
     <color name="transparent">#00FFFFFF</color>
 
+    <color name="white">#ffffff</color>
+
+    <!--字体颜色-->
+    <color name="titleNormal">#ABB1B7</color>
+    <color name="titleSelected_gray">#C2C2C2</color>
+
     <!--智能应用页面标题字体颜色-->
     <color name="title_app_store">#fff</color>
 </resources>

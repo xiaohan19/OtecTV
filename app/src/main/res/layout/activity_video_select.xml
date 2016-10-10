@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_bg"
+    tools:context=".activity.VideoSelectActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_70"
+        android:layout_marginLeft="@dimen/w_374"
+        android:layout_marginTop="@dimen/w_61"
+        android:orientation="horizontal" />
+
+    <FrameLayout
+        android:id="@+id/video_select_activity_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/w_135"
+        android:layout_marginTop="@dimen/w_151" />
+</RelativeLayout>

@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 
 import com.chinaotec.tv.otectv.R;
 import com.chinaotec.tv.otectv.activity.AppStoreActivity;
-import com.chinaotec.tv.otectv.activity.VideoActivity;
+import com.chinaotec.tv.otectv.activity.VideoSelectActivity;
 import com.chinaotec.tv.otectv.util.Logger;
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by linhao on 2016/10/9.
  */
 public class MainOneFragment extends Fragment {
 
@@ -75,17 +75,17 @@ public class MainOneFragment extends Fragment {
                     Intent intent;
                     switch (v.getId()) {
                         case R.id.main_hd:
-                            intent = new Intent(getContext(), VideoActivity.class);
+                            intent = new Intent(getContext(), VideoSelectActivity.class);
                             intent.putExtra("type", "hd");
                             startActivity(intent);
                             break;
                         case R.id.main_look_back:
-                            intent = new Intent(getContext(), VideoActivity.class);
+                            intent = new Intent(getContext(), VideoSelectActivity.class);
                             intent.putExtra("type", "lookBack");
                             startActivity(intent);
                             break;
                         case R.id.main_play:
-                            intent = new Intent(getContext(), VideoActivity.class);
+                            intent = new Intent(getContext(), VideoSelectActivity.class);
                             intent.putExtra("type", "play");
                             startActivity(intent);
                             break;

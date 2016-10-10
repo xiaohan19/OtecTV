@@ -1,4 +1,4 @@
-package com.chinaotec.tv.otectv.fragment.main;
+package com.chinaotec.tv.otectv.fragment;
 
 
 import android.os.Bundle;
@@ -8,30 +8,31 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.chinaotec.tv.otectv.R;
-import com.chinaotec.tv.otectv.util.Logger;
 
 /**
- * Created by linhao on 2016/10/9.
+ * A simple {@link Fragment} subclass.
  */
-public class MainTwoFragment extends Fragment {
+public class ItemVideoOneFragment extends Fragment {
 
-    public MainTwoFragment() {
-        // Required empty public constructor
-    }
+    public static ItemVideoOneFragment newInstance() {
 
-    public static MainTwoFragment newInstance() {
-        Logger.i();
         Bundle args = new Bundle();
-        MainTwoFragment fragment = new MainTwoFragment();
+
+        ItemVideoOneFragment fragment = new ItemVideoOneFragment();
         fragment.setArguments(args);
         return fragment;
     }
+
+    public ItemVideoOneFragment() {
+        // Required empty public constructor
+    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main_two, container, false);
+        return inflater.inflate(R.layout.fragment_item_video_one, container, false);
     }
 
 }
