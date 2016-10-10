@@ -7,7 +7,7 @@
     <color name="mainFrame_gray">#BBB</color>
     <color name="mainFrameTrue_blue">#A5CDFF</color>
     <color name="transparent">#00FFFFFF</color>
-    <!--高清页面标题栏字体颜色选中没选中-->
-    <color name="titleNormal">#ABB1B7</color>
-    <color name="titleSelected">#C2C2C4</color>
+
+    <!--智能应用页面标题字体颜色-->
+    <color name="title_app_store">#fff</color>
 </resources>

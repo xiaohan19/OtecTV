@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.chinaotec.tv.otectv.R;
+import com.chinaotec.tv.otectv.activity.AppStoreActivity;
 import com.chinaotec.tv.otectv.activity.VideoActivity;
 import com.chinaotec.tv.otectv.util.Logger;
 
@@ -86,6 +87,10 @@ public class MainOneFragment extends Fragment {
                         case R.id.main_play:
                             intent = new Intent(getContext(), VideoActivity.class);
                             intent.putExtra("type", "play");
+                            startActivity(intent);
+                            break;
+                        case R.id.main_app_store:
+                            intent = new Intent(getContext(), AppStoreActivity.class);
                             startActivity(intent);
                             break;
                     }

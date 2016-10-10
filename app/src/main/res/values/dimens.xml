@@ -7,4 +7,6 @@
     <!--高清页面子页面标题字体大小-->
     <dimen name="title_text_size_normal">@dimen/w_48</dimen>
     <dimen name="title_text_size_selected">@dimen/w_60</dimen>
+
+
 </resources>
