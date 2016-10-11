@@ -4,10 +4,10 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
+import com.chinaotec.tv.otectv.activity.BaseActivity;
 import com.chinaotec.tv.otectv.fragment.main.MainOneFragment;
 import com.chinaotec.tv.otectv.fragment.main.MainTwoFragment;
 import com.chinaotec.tv.otectv.util.Logger;
@@ -15,7 +15,7 @@ import com.chinaotec.tv.otectv.util.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     static {
         System.loadLibrary("tvplay");

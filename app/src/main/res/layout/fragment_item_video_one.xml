@@ -1,16 +1,248 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingTop="@dimen/w_16"
     tools:context="com.chinaotec.tv.otectv.fragment.ItemVideoOneFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <Button
-        android:focusable="true"
+    <RelativeLayout
+        android:id="@+id/video_big_tv1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="第一个界面"
-        />
+        android:layout_height="@dimen/w_498"
+        android:layout_margin="@dimen/w_13"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_828"
+            android:layout_height="@dimen/w_484"
+            app:placeholderImage="@mipmap/video_big_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_828"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="美国队长"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_828"
+            android:layout_height="@dimen/w_484"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_big_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_498"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/video_big_tv1"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_828"
+            android:layout_height="@dimen/w_484"
+            app:placeholderImage="@mipmap/video_big_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_828"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="美国队长"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_828"
+            android:layout_height="@dimen/w_484"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_236"
+        android:layout_below="@id/video_big_tv1"
+        android:layout_margin="@dimen/w_13"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/video_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="神话"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_236"
+        android:layout_below="@id/video_big_tv1"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/video_tv1"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/video_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="神话"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_236"
+        android:layout_below="@id/video_big_tv1"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/video_tv2"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/video_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="神话"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_236"
+        android:layout_below="@id/video_big_tv1"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/video_tv3"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/video_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="神话"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
 
 
-</FrameLayout>
+</RelativeLayout>

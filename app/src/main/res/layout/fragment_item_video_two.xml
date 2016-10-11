@@ -1,15 +1,325 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingTop="@dimen/w_16"
     tools:context="com.chinaotec.tv.otectv.fragment.ItemVideoTwoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <Button
+    <RelativeLayout
+        android:id="@+id/video_tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_236"
+        android:layout_margin="@dimen/w_13"
+        android:background="@drawable/main_shadow"
         android:focusable="true"
-       android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="第二个界面"
-        />
+        android:padding="@dimen/w_7">
 
-</FrameLayout>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/video_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="神话"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_236"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/video_tv5"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/video_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="神话"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_236"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/video_tv6"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/video_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="神话"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_236"
+        android:layout_below="@id/video_tv5"
+        android:layout_margin="@dimen/w_13"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/video_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="神话"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_tv9"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_236"
+        android:layout_below="@id/video_tv5"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/video_tv8"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/video_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="神话"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_236"
+        android:layout_below="@id/video_tv5"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/video_tv9"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/video_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="神话"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_tv11"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_236"
+        android:layout_below="@id/video_tv10"
+        android:layout_margin="@dimen/w_13"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/video_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="神话"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_tv12"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_236"
+        android:layout_below="@id/video_tv10"
+        android:layout_margin="@dimen/w_13"
+        android:layout_toRightOf="@id/video_tv11"
+        android:background="@drawable/main_shadow"
+        android:focusable="true"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/video_tv1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_80"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_28"
+                android:text="神话"
+                android:textSize="@dimen/w_48" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -3,7 +3,6 @@ package com.chinaotec.tv.otectv.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -25,6 +24,10 @@ public class VideoSelectFragment extends Fragment {
     private View inflate;
     private List<Fragment> fragments;
 
+    public VideoSelectFragment() {
+        // Required empty public constructor
+    }
+
     public static VideoSelectFragment newInstance(String str) {
         Logger.i();
         Bundle args = new Bundle();
@@ -33,11 +36,6 @@ public class VideoSelectFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
-
-    public VideoSelectFragment() {
-        // Required empty public constructor
-    }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -61,7 +59,7 @@ public class VideoSelectFragment extends Fragment {
     class MyPagerAdapter extends FragmentPagerAdapter{
 
         public MyPagerAdapter() {
-            super(getFragmentManager());
+            super(getChildFragmentManager());
         }
 
         @Override

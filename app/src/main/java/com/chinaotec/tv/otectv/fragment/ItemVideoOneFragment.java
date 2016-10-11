@@ -14,6 +14,13 @@ import com.chinaotec.tv.otectv.R;
  */
 public class ItemVideoOneFragment extends Fragment {
 
+    private View inflate;
+    private View view;
+
+    public ItemVideoOneFragment() {
+        // Required empty public constructor
+    }
+
     public static ItemVideoOneFragment newInstance() {
 
         Bundle args = new Bundle();
@@ -23,16 +30,26 @@ public class ItemVideoOneFragment extends Fragment {
         return fragment;
     }
 
-    public ItemVideoOneFragment() {
-        // Required empty public constructor
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_item_video_one, container, false);
+        inflate = inflater.inflate(R.layout.fragment_item_video_one, container, false);
+        init();
+        return inflate;
     }
 
+    private void init() {
+        view = inflate.findViewById(R.id.video_big_tv2);
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            if (view != null) {
+                view.requestFocus();
+            }
+        }
+    }
 }

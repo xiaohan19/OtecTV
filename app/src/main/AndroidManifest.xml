@@ -18,8 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.AppStoreActivity"></activity>
-        <activity android:name=".activity.VideoSelectActivity"></activity>
+        <activity android:name=".activity.AppStoreActivity" />
+        <activity android:name=".activity.VideoSelectActivity" />
+        <activity android:name=".activity.BaseActivity"></activity>
     </application>
 
 </manifest>
