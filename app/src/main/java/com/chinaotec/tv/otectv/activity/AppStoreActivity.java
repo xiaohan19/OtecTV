@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -20,14 +19,9 @@ import java.util.List;
 
 public class AppStoreActivity extends AppCompatActivity {
 
-    private ImageView app_store_logo;
     private RelativeLayout relative_top;
     private View view_line;
     private FrameLayout app_ott_video;
-    private FrameLayout app_video_communications;
-    private FrameLayout app_intelligent_medical;
-    private FrameLayout app_shop;
-    private FrameLayout app_game_hall;
     private RelativeLayout relative_app;
     private Context mContext;
     private Activity mActivity;
@@ -46,15 +40,9 @@ public class AppStoreActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        app_store_logo = (ImageView) findViewById(R.id.app_store_logo);
         relative_top = (RelativeLayout) findViewById(R.id.relative_top);
-        view_line = (View) findViewById(R.id.view_line);
-        app_ott_video = (FrameLayout) findViewById(R.id.app_ott_video);
-        app_video_communications = (FrameLayout) findViewById(R.id.app_video_communications);
-        app_intelligent_medical = (FrameLayout) findViewById(R.id.app_intelligent_medical);
-        app_shop = (FrameLayout) findViewById(R.id.app_shop);
-        app_game_hall = (FrameLayout) findViewById(R.id.app_game_hall);
         relative_app = (RelativeLayout) findViewById(R.id.relative_app);
+        app_ott_video = (FrameLayout) findViewById(R.id.app_ott_video);
     }
 
     private void iniListener() {

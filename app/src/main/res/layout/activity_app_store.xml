@@ -55,10 +55,10 @@
             android:id="@+id/app_ott_video"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/w_33"
+            android:layout_marginBottom="@dimen/w_31"
             android:layout_marginLeft="@dimen/w_56"
             android:layout_marginRight="@dimen/w_33"
-            android:layout_marginTop="@dimen/w_21"
+            android:layout_marginTop="@dimen/w_29"
             android:background="@drawable/main_shadow"
             android:padding="@dimen/w_7">
 
@@ -126,7 +126,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/w_29"
             android:layout_marginRight="@dimen/w_33"
-            android:layout_marginTop="@dimen/w_21"
+            android:layout_marginTop="@dimen/w_29"
             android:layout_toRightOf="@+id/app_ott_video"
             android:background="@drawable/main_shadow"
             android:padding="@dimen/w_7">
@@ -148,7 +148,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/w_29"
-            android:layout_marginTop="@dimen/w_21"
+            android:layout_marginTop="@dimen/w_29"
             android:layout_toRightOf="@id/app_shop"
             android:background="@drawable/main_shadow"
             android:padding="@dimen/w_7">
