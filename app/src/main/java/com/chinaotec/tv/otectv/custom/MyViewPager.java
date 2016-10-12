@@ -9,8 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 
-import com.chinaotec.tv.otectv.util.Logger;
-
 /**
  * Created by linhao on 2016/10/12.
  */
@@ -28,9 +26,7 @@ public class MyViewPager extends ViewPager {
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
         // Let the focused view and/or our descendants get the key first
-        boolean b = super.dispatchKeyEvent(event) || interceptKeyDownEvent(event);
-        Logger.e(b + "");
-        return b;
+        return super.dispatchKeyEvent(event) || interceptKeyDownEvent(event);
     }
 
     public boolean interceptKeyDownEvent(KeyEvent event) {
