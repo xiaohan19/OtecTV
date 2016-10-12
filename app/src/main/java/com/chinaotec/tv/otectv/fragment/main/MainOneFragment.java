@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.chinaotec.tv.otectv.R;
-import com.chinaotec.tv.otectv.activity.AppStoreActivity;
 import com.chinaotec.tv.otectv.activity.VideoSelectActivity;
+import com.chinaotec.tv.otectv.activity.appstore.AppStoreActivity;
 import com.chinaotec.tv.otectv.util.Logger;
 
 /**

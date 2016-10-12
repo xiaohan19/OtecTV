@@ -14,6 +14,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.chinaotec.tv.otectv.R;
+import com.chinaotec.tv.otectv.activity.base.BaseActivity;
 import com.chinaotec.tv.otectv.fragment.VideoSelectFragment;
 
 import java.util.HashMap;

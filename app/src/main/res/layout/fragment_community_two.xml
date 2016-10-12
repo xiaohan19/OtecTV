@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/community_fragment_two"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/sq_ad3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_shadow"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/sq_ad1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sq_ad4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_33"
+        android:layout_toRightOf="@+id/sq_ad3"
+        android:background="@drawable/main_shadow"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/sq_ad1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+</RelativeLayout>

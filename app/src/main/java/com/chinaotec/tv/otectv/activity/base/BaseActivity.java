@@ -1,4 +1,4 @@
-package com.chinaotec.tv.otectv.activity;
+package com.chinaotec.tv.otectv.activity.base;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
