@@ -1,10 +1,11 @@
-package com.chinaotec.tv.otectv.activity.base;
+package com.chinaotec.tv.otectv.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
+import com.chinaotec.tv.otectv.R;
 import com.chinaotec.tv.otectv.custom.WeatherView;
 
 public abstract class BaseActivity extends AppCompatActivity {
@@ -26,7 +27,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         ViewGroup viewGroup = (ViewGroup) findViewById(android.R.id.content);
         childAt = (RelativeLayout) viewGroup.getChildAt(0);
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-        layoutParams.setMargins(1480, 43, 60, 944);
+        layoutParams.setMargins(getResources().getDimensionPixelOffset(R.dimen.w_1480), getResources().getDimensionPixelOffset(R.dimen.w_43), getResources().getDimensionPixelOffset(R.dimen.w_60), getResources().getDimensionPixelOffset(R.dimen.w_944));
         childAt.addView(weatherView, layoutParams);
     }
 

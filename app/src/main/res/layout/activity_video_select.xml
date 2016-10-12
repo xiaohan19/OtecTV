@@ -6,6 +6,21 @@
     android:background="@mipmap/main_bg"
     tools:context=".activity.VideoSelectActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_63"
+        android:layout_marginTop="@dimen/w_62"
+        android:src="@mipmap/logo2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w_1"
+        android:layout_marginLeft="@dimen/w_63"
+        android:layout_marginRight="@dimen/w_460"
+        android:layout_marginTop="@dimen/w_150"
+        android:background="@color/mainFrame_gray" />
+
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="wrap_content"

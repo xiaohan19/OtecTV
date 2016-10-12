@@ -7,7 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
-import com.chinaotec.tv.otectv.activity.base.BaseActivity;
+import com.chinaotec.tv.otectv.activity.BaseActivity;
 import com.chinaotec.tv.otectv.fragment.main.MainOneFragment;
 import com.chinaotec.tv.otectv.fragment.main.MainTwoFragment;
 import com.chinaotec.tv.otectv.util.Logger;

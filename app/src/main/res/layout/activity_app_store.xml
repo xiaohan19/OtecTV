@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="@mipmap/main_bg"
     android:clipChildren="false"
-    tools:context=".activity.appstore.AppStoreActivity">
+    tools:context="com.chinaotec.tv.otectv.activity.AppStoreActivity">
 
     <RelativeLayout
         android:id="@+id/relative_top"
@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/w_62"
-            android:src="@mipmap/item_logo" />
+            android:src="@mipmap/app_store_logo" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -171,7 +171,7 @@
             android:layout_height="@dimen/w_70"
             android:layout_below="@+id/app_video_communications"
             android:layout_marginLeft="@dimen/w_63"
-            android:src="@mipmap/tool_main_page" />
+            android:src="@mipmap/app_tool_main_page" />
 
         <ImageView
             android:id="@+id/app_tool_trailer"
@@ -180,7 +180,7 @@
             android:layout_below="@+id/app_video_communications"
             android:layout_marginLeft="@dimen/w_60"
             android:layout_toRightOf="@+id/app_tool_main_page"
-            android:src="@mipmap/tool_trailer" />
+            android:src="@mipmap/app_tool_trailer" />
 
         <ImageView
             android:id="@+id/app_tool_smart"
@@ -189,6 +189,6 @@
             android:layout_below="@+id/app_intelligent_medical"
             android:layout_marginLeft="@dimen/w_60"
             android:layout_toRightOf="@+id/app_tool_trailer"
-            android:src="@mipmap/tool_smart" />
+            android:src="@mipmap/app_tool_smart" />
     </RelativeLayout>
 </RelativeLayout>

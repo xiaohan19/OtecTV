@@ -1,9 +1,10 @@
-package com.chinaotec.tv.otectv.activity.appstore;
+package com.chinaotec.tv.otectv.activity;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
@@ -11,13 +12,12 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.chinaotec.tv.otectv.R;
-import com.chinaotec.tv.otectv.activity.base.BaseActivity;
 import com.chinaotec.tv.otectv.bean.AppBean;
 import com.chinaotec.tv.otectv.util.GetSysUtil;
 
 import java.util.List;
 
-public class AppStoreActivity extends BaseActivity {
+public class AppStoreActivity extends AppCompatActivity {
 
     private RelativeLayout relative_top;
     private View view_line;
