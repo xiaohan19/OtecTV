@@ -27,6 +27,7 @@ public class CommunityActivity extends BaseActivity {
     }
 
     private void init() {
+        //初始化
         ViewPager viewPager = (ViewPager) findViewById(R.id.community_page);
         fragmentList = new ArrayList<>();
         fragmentList.add(CommunityFragmentOne.newInstance());
