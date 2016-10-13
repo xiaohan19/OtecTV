@@ -24,8 +24,8 @@ public class VideoSelectActivity extends BaseActivity {
     private String[] lookBackStrArray = {"推荐", "高清回看", "标清回看", "标清央视", "标清外地"};
     private String[] hdStrArray = {"高清频道", "高清回看", "高清点播", "3D点播"};
     private String[] playStrArray = {"最新推荐", "院线大片", "欧美", "港台", "动作", "科幻", "爱情", "推理"};
-    private Map<Integer, Fragment> fragments = new HashMap<>();
-    private Fragment showFragment;
+    private Map<Integer, BaseFragment> fragments = new HashMap<>();
+    private BaseFragment showFragment;
     private RadioGroup radioGroup;
     private boolean isDestroy = true;//防止radioButton回调因为activity已经销毁继续执行fragmentTransaction.commitAllowingStateLoss()的异常；
 
@@ -72,6 +72,8 @@ public class VideoSelectActivity extends BaseActivity {
                                 public boolean OnKeyIntercept(Fragment fragment, int keyCode, KeyEvent event) {
                                     if (keyCode == KeyEvent.KEYCODE_DPAD_UP) {
                                         buttonView.requestFocus();
+                                        return true;
+                                    } else if (keyCode == KeyEvent.KEYCODE_DPAD_RIGHT) {
                                         return true;
                                     }
                                     return false;
@@ -143,11 +145,13 @@ public class VideoSelectActivity extends BaseActivity {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if ((position == 0 && keyCode == KeyEvent.KEYCODE_DPAD_LEFT) || (position == strings.length - 1 && keyCode == KeyEvent.KEYCODE_DPAD_RIGHT)) {
                     return true;
+                } else if (keyCode == KeyEvent.KEYCODE_DPAD_DOWN) {
+                    fragments.get(v.getId()).setFocus(true);
+                    return true;
                 }
                 return false;
             }
         });
-
         return radioButton;
     }
 

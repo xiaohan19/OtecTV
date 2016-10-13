@@ -12,7 +12,7 @@ import com.chinaotec.tv.otectv.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ItemVideoOneFragment extends Fragment {
+public class ItemVideoOneFragment extends BaseFragment {
 
     private View inflate;
     private View view;
@@ -51,5 +51,11 @@ public class ItemVideoOneFragment extends Fragment {
                 view.requestFocus();
             }
         }
+    }
+
+    @Override
+    public boolean onFocusChange(boolean hasFocus) {
+        inflate.findViewById(R.id.video_big_tv1).requestFocus();
+        return true;
     }
 }

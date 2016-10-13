@@ -23,7 +23,8 @@ import java.util.List;
 public class VideoSelectFragment extends BaseFragment {
 
     private View inflate;
-    private List<Fragment> fragments;
+    private List<BaseFragment> fragments;
+    private MyViewPager viewPager;
 
     public VideoSelectFragment() {
         // Required empty public constructor
@@ -50,7 +51,7 @@ public class VideoSelectFragment extends BaseFragment {
     private void init() {
         TextView textView = (TextView)inflate.findViewById(R.id.type_txt);
         textView.setText(getArguments().getString("type"));
-        MyViewPager viewPager = (MyViewPager) inflate.findViewById(R.id.video_select_viewPager);
+        viewPager = (MyViewPager) inflate.findViewById(R.id.video_select_viewPager);
 //        viewPager.setOnKeyInterceptListener(new MyViewPager.OnKeyInterceptListener() {
 //            @Override
 //            public boolean OnKeyIntercept(ViewGroup viewGroup, int keyCode, KeyEvent event) {
@@ -68,6 +69,14 @@ public class VideoSelectFragment extends BaseFragment {
         fragments.add(ItemVideoOneFragment.newInstance());
         fragments.add(ItemVideoTwoFragment.newInstance());
         viewPager.setAdapter(new MyPagerAdapter());
+    }
+
+    @Override
+    public boolean onFocusChange(boolean hasFocus) {
+        if (hasFocus) {
+            fragments.get(viewPager.getCurrentItem()).setFocus(hasFocus);
+        }
+        return true;
     }
 
     class MyPagerAdapter extends FragmentPagerAdapter{

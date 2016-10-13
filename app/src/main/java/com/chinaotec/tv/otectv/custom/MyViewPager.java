@@ -40,6 +40,9 @@ public class MyViewPager extends ViewPager {
                     case KeyEvent.KEYCODE_DPAD_DOWN:
                         handled = arrow(event, FOCUS_DOWN);
                         break;
+                    case KeyEvent.KEYCODE_DPAD_RIGHT:
+                        handled = arrow(event, FOCUS_RIGHT);
+                        break;
                 }
             }
         }
