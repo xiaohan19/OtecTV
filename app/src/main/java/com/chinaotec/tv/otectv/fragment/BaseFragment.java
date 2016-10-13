@@ -17,6 +17,7 @@ public abstract class BaseFragment extends Fragment {
     /**
      * 此方法执行拦截；
      * 配合{@link #setOnKeyInterceptListener(OnKeyInterceptListener)}一起使用；
+     *
      * @param event
      * @return
      */

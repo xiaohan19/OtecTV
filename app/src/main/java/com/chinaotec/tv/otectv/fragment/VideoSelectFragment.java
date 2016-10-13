@@ -33,7 +33,7 @@ public class VideoSelectFragment extends BaseFragment {
     public static VideoSelectFragment newInstance(String str) {
         Logger.i();
         Bundle args = new Bundle();
-        args.putString("type",str);
+        args.putString("type", str);
         VideoSelectFragment fragment = new VideoSelectFragment();
         fragment.setArguments(args);
         return fragment;
@@ -49,7 +49,7 @@ public class VideoSelectFragment extends BaseFragment {
     }
 
     private void init() {
-        TextView textView = (TextView)inflate.findViewById(R.id.type_txt);
+        TextView textView = (TextView) inflate.findViewById(R.id.type_txt);
         textView.setText(getArguments().getString("type"));
         viewPager = (MyViewPager) inflate.findViewById(R.id.video_select_viewPager);
 //        viewPager.setOnKeyInterceptListener(new MyViewPager.OnKeyInterceptListener() {
@@ -79,7 +79,7 @@ public class VideoSelectFragment extends BaseFragment {
         return true;
     }
 
-    class MyPagerAdapter extends FragmentPagerAdapter{
+    class MyPagerAdapter extends FragmentPagerAdapter {
 
         public MyPagerAdapter() {
             super(getChildFragmentManager());
