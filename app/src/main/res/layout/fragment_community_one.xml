@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/community_fragment_one"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/health_medical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_shadow"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_484"
+            app:placeholderImage="@mipmap/sq_health_medicine"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_484"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/radio_television_hall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_33"
+        android:layout_toRightOf="@+id/health_medical"
+        android:background="@drawable/main_shadow"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_484"
+            app:placeholderImage="@mipmap/sq_radio_television_hall"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_484"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/water_electricity_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_33"
+        android:layout_marginRight="@dimen/w_13"
+        android:layout_toRightOf="@+id/radio_television_hall"
+        android:background="@drawable/main_shadow"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/sq_water_electricity_fee"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/intelligence_community"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/water_electricity_fee"
+        android:layout_marginLeft="@dimen/w_33"
+        android:layout_marginRight="@dimen/w_13"
+        android:layout_marginTop="@dimen/w_33"
+        android:layout_toRightOf="@+id/radio_television_hall"
+        android:background="@drawable/main_shadow"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/sq_intelligence_community"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/stock_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_13"
+        android:layout_toRightOf="@+id/water_electricity_fee"
+        android:background="@drawable/main_shadow"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/sq_stock_query"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/traffic_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/water_electricity_fee"
+        android:layout_marginLeft="@dimen/w_13"
+        android:layout_marginTop="@dimen/w_33"
+        android:layout_toRightOf="@+id/intelligence_community"
+        android:background="@drawable/main_shadow"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/sq_traffic_query"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/agricultural_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/health_medical"
+        android:layout_marginTop="@dimen/w_33"
+        android:background="@drawable/main_shadow"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/sq_agricultural_products"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cultural_tourism"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_television_hall"
+        android:layout_marginLeft="@dimen/w_33"
+        android:layout_marginTop="@dimen/w_33"
+        android:layout_toRightOf="@+id/agricultural_products"
+        android:background="@drawable/main_shadow"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/sq_cultural_tourism"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sq_ad1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intelligence_community"
+        android:layout_marginLeft="@dimen/w_33"
+        android:layout_marginRight="@dimen/w_13"
+        android:layout_marginTop="@dimen/w_33"
+        android:layout_toRightOf="@+id/cultural_tourism"
+        android:background="@drawable/main_shadow"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/sq_ad1"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sq_ad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intelligence_community"
+        android:layout_marginLeft="@dimen/w_13"
+        android:layout_marginTop="@dimen/w_33"
+        android:layout_toRightOf="@+id/sq_ad1"
+        android:background="@drawable/main_shadow"
+        android:padding="@dimen/w_7">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            app:placeholderImage="@mipmap/sq_ad2"
+            app:roundedCornerRadius="@dimen/w_10" />
+
+        <View
+            android:layout_width="@dimen/w_394"
+            android:layout_height="@dimen/w_222"
+            android:background="@drawable/main_frame" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/tool_main_page"
+        android:layout_width="@dimen/w_218"
+        android:layout_height="@dimen/w_70"
+        android:layout_below="@+id/agricultural_products"
+        android:layout_marginLeft="@dimen/w_63"
+        android:layout_marginTop="@dimen/w_36"
+        android:src="@mipmap/tool_main_page" />
+
+    <ImageView
+        android:id="@+id/tool_trailer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agricultural_products"
+        android:layout_marginLeft="@dimen/w_60"
+        android:layout_marginTop="@dimen/w_36"
+        android:layout_toRightOf="@+id/tool_main_page"
+        android:src="@mipmap/tool_trailer" />
+
+    <ImageView
+        android:id="@+id/app_tool_smart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agricultural_products"
+        android:layout_marginLeft="@dimen/w_60"
+        android:layout_marginTop="@dimen/w_36"
+        android:layout_toRightOf="@+id/tool_trailer"
+        android:src="@mipmap/tool_smart" />
+</RelativeLayout>

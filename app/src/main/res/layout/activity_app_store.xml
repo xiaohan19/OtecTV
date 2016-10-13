@@ -6,10 +6,10 @@
     android:layout_height="wrap_content"
     android:background="@mipmap/main_bg"
     android:clipChildren="false"
-    tools:context="com.chinaotec.tv.otectv.activity.AppStoreActivity">
+    tools:context=".activity.AppStoreActivity">
 
     <RelativeLayout
-        android:id="@+id/relative_top"
+        android:id="@+id/relative_top_app_store"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/w_63"
@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/w_62"
-            android:src="@mipmap/app_store_logo" />
+            android:src="@mipmap/item_logo" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
         android:id="@+id/view_line"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/w_1"
-        android:layout_below="@id/relative_top"
+        android:layout_below="@id/relative_top_app_store"
         android:layout_marginLeft="@dimen/w_63"
         android:layout_marginRight="@dimen/w_456"
         android:layout_marginTop="@dimen/w_14"
@@ -171,7 +171,7 @@
             android:layout_height="@dimen/w_70"
             android:layout_below="@+id/app_video_communications"
             android:layout_marginLeft="@dimen/w_63"
-            android:src="@mipmap/app_tool_main_page" />
+            android:src="@mipmap/tool_main_page" />
 
         <ImageView
             android:id="@+id/app_tool_trailer"
@@ -180,7 +180,7 @@
             android:layout_below="@+id/app_video_communications"
             android:layout_marginLeft="@dimen/w_60"
             android:layout_toRightOf="@+id/app_tool_main_page"
-            android:src="@mipmap/app_tool_trailer" />
+            android:src="@mipmap/tool_trailer" />
 
         <ImageView
             android:id="@+id/app_tool_smart"
@@ -189,6 +189,6 @@
             android:layout_below="@+id/app_intelligent_medical"
             android:layout_marginLeft="@dimen/w_60"
             android:layout_toRightOf="@+id/app_tool_trailer"
-            android:src="@mipmap/app_tool_smart" />
+            android:src="@mipmap/tool_smart" />
     </RelativeLayout>
 </RelativeLayout>

@@ -20,7 +20,7 @@
         </activity>
         <activity android:name=".activity.AppStoreActivity" />
         <activity android:name=".activity.VideoSelectActivity" />
-        <activity android:name=".activity.BaseActivity"></activity>
+        <activity android:name=".activity.community.CommunityActivity" />
     </application>
 
 </manifest>

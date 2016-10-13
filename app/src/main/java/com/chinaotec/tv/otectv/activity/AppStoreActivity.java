@@ -14,12 +14,13 @@ import android.widget.Toast;
 import com.chinaotec.tv.otectv.R;
 import com.chinaotec.tv.otectv.bean.AppBean;
 import com.chinaotec.tv.otectv.util.GetSysUtil;
+import com.chinaotec.tv.otectv.util.Logger;
 
 import java.util.List;
 
 public class AppStoreActivity extends AppCompatActivity {
 
-    private RelativeLayout relative_top;
+    private RelativeLayout relative_top_app_store;
     private View view_line;
     private FrameLayout app_ott_video;
     private RelativeLayout relative_app;
@@ -40,7 +41,7 @@ public class AppStoreActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        relative_top = (RelativeLayout) findViewById(R.id.relative_top);
+        relative_top_app_store = (RelativeLayout) findViewById(R.id.relative_top_app_store);
         relative_app = (RelativeLayout) findViewById(R.id.relative_app);
         app_ott_video = (FrameLayout) findViewById(R.id.app_ott_video);
     }
@@ -68,20 +69,51 @@ public class AppStoreActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     int id = v.getId();
+                    List<AppBean> appList = GetSysUtil.getAllAppInfo(mActivity);
                     switch (id) {
                         //打开游戏大厅app
                         case R.id.app_game_hall:
-                            List<AppBean> appList = GetSysUtil.getAllAppInfo(mActivity);
                             for (int i = 0; i < appList.size(); i++) {
                                 if ("com.chinaotec.platformotec".equals(appList.get(i).packgeName)) {
                                     try {
                                         Intent intent = mActivity.getPackageManager().getLaunchIntentForPackage(appList.get(i).packgeName);
                                         mContext.startActivity(intent);
                                     } catch (Exception e) {
-                                        Toast.makeText(mContext, "打开游戏大厅失败", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(mContext, "打开应用程序失败", Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             }
+                            break;
+                        //打开应用商店
+                        case R.id.app_shop:
+                            for (int i = 0; i < appList.size(); i++) {
+                                if ("com.shafa.market".equals(appList.get(i).packgeName)) {
+                                    try {
+                                        Intent intent = mActivity.getPackageManager().getLaunchIntentForPackage(appList.get(i).packgeName);
+                                        mContext.startActivity(intent);
+                                    } catch (Exception e) {
+                                        Toast.makeText(mContext, "打开应用程序失败", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            }
+                            break;
+                        //打开智能医疗
+                        case R.id.app_intelligent_medical:
+                            for (int i = 0; i < appList.size(); i++) {
+                                if ("cn.dxy.android.aspirin.tv".equals(appList.get(i).packgeName)) {
+                                    Logger.i("丁香医生的包名" + appList.get(i).packgeName);
+                                    try {
+                                        Intent intent = mActivity.getPackageManager().getLaunchIntentForPackage(appList.get(i).packgeName);
+                                        mContext.startActivity(intent);
+                                    } catch (Exception e) {
+                                        Toast.makeText(mContext, "打开应用程序失败", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            }
+                            break;
+                        default:
+                            Toast.makeText(mContext, "此应用尚未开发", Toast.LENGTH_LONG).show();
+                            break;
                     }
                 }
             });
