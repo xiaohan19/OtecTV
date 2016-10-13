@@ -146,7 +146,7 @@ public class VideoSelectActivity extends BaseActivity {
                 if ((position == 0 && keyCode == KeyEvent.KEYCODE_DPAD_LEFT) || (position == strings.length - 1 && keyCode == KeyEvent.KEYCODE_DPAD_RIGHT)) {
                     return true;
                 } else if (keyCode == KeyEvent.KEYCODE_DPAD_DOWN) {
-                    fragments.get(v.getId()).setFocus(true);
+                    fragments.get(v.getId()).requestFocus();
                     return true;
                 }
                 return false;

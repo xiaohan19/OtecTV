@@ -74,7 +74,7 @@ public class VideoSelectFragment extends BaseFragment {
     @Override
     public boolean onFocusChange(boolean hasFocus) {
         if (hasFocus) {
-            fragments.get(viewPager.getCurrentItem()).setFocus(hasFocus);
+            fragments.get(viewPager.getCurrentItem()).requestFocus();
         }
         return true;
     }
