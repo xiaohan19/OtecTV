@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_bg"
+    android:clipChildren="false"
+    tools:context=".activity.community.CommunityActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_top_sq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_63"
+        android:focusable="false">
+
+        <ImageView
+            android:id="@+id/app_store_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/w_62"
+            android:src="@mipmap/item_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_50"
+            android:layout_marginTop="@dimen/w_62"
+            android:layout_toRightOf="@+id/app_store_logo"
+            android:text="@string/title_community"
+            android:textColor="@color/title_app_store"
+            android:textSize="@dimen/w_60" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/w_1"
+        android:layout_below="@id/relative_top_sq"
+        android:layout_marginLeft="@dimen/w_63"
+        android:layout_marginRight="@dimen/w_456"
+        android:layout_marginTop="@dimen/w_14"
+        android:background="@android:color/holo_blue_bright"
+        android:focusable="false" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/community_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_line"
+        android:layout_marginLeft="@dimen/w_63"
+        android:layout_marginRight="@dimen/w_100"
+        android:layout_marginTop="@dimen/w_36"
+        android:clipChildren="false" />
+</RelativeLayout>

@@ -14,7 +14,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.chinaotec.tv.otectv.R;
-import com.chinaotec.tv.otectv.fragment.BaseFragment;
 import com.chinaotec.tv.otectv.fragment.VideoSelectFragment;
 
 import java.util.HashMap;
@@ -60,23 +59,13 @@ public class VideoSelectActivity extends BaseActivity {
         for (int i = 0; i < radioGroup.getChildCount(); i++) {
             ((RadioButton) radioGroup.getChildAt(i)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
-                public void onCheckedChanged(final CompoundButton buttonView, boolean isChecked) {
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     if (isChecked) {
                         buttonView.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.w_60));
                         buttonView.setTextColor(getResources().getColor(R.color.white));
                         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
                         if (fragments.get(buttonView.getId()) == null) {
                             VideoSelectFragment videoSelectFragment = VideoSelectFragment.newInstance(buttonView.getText().toString());
-                            videoSelectFragment.setOnKeyInterceptListener(new BaseFragment.OnKeyInterceptListener() {
-                                @Override
-                                public boolean OnKeyIntercept(Fragment fragment, int keyCode, KeyEvent event) {
-                                    if (keyCode == KeyEvent.KEYCODE_DPAD_UP) {
-                                        buttonView.requestFocus();
-                                        return true;
-                                    }
-                                    return false;
-                                }
-                            });
                             fragmentTransaction.add(R.id.video_select_activity_fragment, videoSelectFragment);
                             fragments.put(buttonView.getId(), videoSelectFragment);
                         } else {
