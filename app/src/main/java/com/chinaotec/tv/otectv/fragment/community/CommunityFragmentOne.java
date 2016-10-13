@@ -9,8 +9,11 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.chinaotec.tv.otectv.R;
+import com.chinaotec.tv.otectv.util.Logger;
 
 public class CommunityFragmentOne extends Fragment {
+
+    private View stock_query;
 
     public CommunityFragmentOne() {
     }
@@ -31,6 +34,7 @@ public class CommunityFragmentOne extends Fragment {
     }
 
     private void init(View inflate) {
+        stock_query = inflate.findViewById(R.id.stock_query);
         ViewGroup viewGroup = (ViewGroup) inflate.findViewById(R.id.community_fragment_one);
         for (int i = 0; i < viewGroup.getChildCount(); i++) {
             viewGroup.getChildAt(i).setFocusable(true);
@@ -44,6 +48,19 @@ public class CommunityFragmentOne extends Fragment {
                     }
                 }
             });
+        }
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            if (stock_query != null) {
+                stock_query.requestFocus();
+                Logger.i("股票查询显示,且获取焦点");
+            } else {
+                Logger.i("股票查询不显示");
+            }
         }
     }
 }

@@ -51,8 +51,10 @@ public class AppStoreActivity extends AppCompatActivity {
             @Override
             public void onGlobalFocusChanged(View oldFocus, View newFocus) {
                 if (newFocus != null) {
-                    newFocus.animate().scaleX(1.1f).scaleY(1.1f).setDuration(300).start();
-                    newFocus.setBackgroundResource(R.drawable.main_select_shadow);
+                    if (newFocus.getId() != R.id.app_tool_main_page || newFocus.getId() != R.id.app_tool_trailer || newFocus.getId() != R.id.app_tool_trailer) {
+                        newFocus.animate().scaleX(1.1f).scaleY(1.1f).setDuration(300).start();
+                        newFocus.setBackgroundResource(R.drawable.main_select_shadow);
+                    }
                 }
                 if (oldFocus != null) {
                     oldFocus.animate().scaleX(1.0f).scaleY(1.0f).setDuration(300).start();
